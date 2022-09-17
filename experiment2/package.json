@@ -1,0 +1,11 @@
+{
+  "name": "experiment2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "s": "sass message.scss:message.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}

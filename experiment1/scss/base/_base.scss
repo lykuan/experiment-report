@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  color: $color-black;
+  background-color: $color-bg-white;
+}
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+.clearfix {
+    display: table;
+    clear: both;
+}

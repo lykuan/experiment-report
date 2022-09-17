@@ -1,0 +1,21 @@
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
+  justify-content: space-evenly;
+  // align-items: center;
+}
+.col-2-of-6 {
+  width: calc((100% / 6) * 2);
+  float: left;
+}
+
+.col-3-of-6 {
+  width: calc((100% / 6) * 3);
+  float: left;
+}
+.col-4-of-6 {
+  float: left;
+  width: calc((100% / 6) * 4);
+}

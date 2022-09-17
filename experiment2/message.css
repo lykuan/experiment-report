@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.message {
+  width: 1140px;
+  margin: 5rem auto;
+  height: 70rem;
+  color: #fff;
+  letter-spacing: 2px;
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, transparent 50%), url(./img/blue.jpg);
+  background-size: cover;
+}
+.message__heading {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+.message__group {
+  margin: 2rem 0;
+  padding: 1rem 1.5rem;
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message__group span {
+  margin: 0 1rem;
+}
+.message__group textarea {
+  outline: none;
+  border-radius: 0.5rem;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+}
+.message__group textarea::-webkit-input-placeholder {
+  content: "";
+  color: #aaa;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+}
+.message__group textarea:focus {
+  border-color: #fff;
+  box-shadow: 0 0 1rem #fff;
+}
+.message__group input {
+  outline: none;
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+  border: none;
+  border-bottom: 3px solid #016a98;
+}
+.message__group input[type=radio] {
+  height: 1.2rem;
+  width: 1.2rem;
+  color: #016a98;
+  appearance: none;
+  outline: none;
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 0;
+  transition: all 0.1s linear;
+}
+.message__group input[type=radio]:checked {
+  border: 0.4rem solid #016a98;
+  outline: #016a98 solid 1px;
+  outline-offset: 4px;
+}
+.message__group input::-webkit-input-placeholder {
+  content: "";
+  color: rgba(170, 170, 170, 0.6666666667);
+  font-size: 1.4rem;
+}
+.message__group input:placeholder-shown {
+  border: none;
+}
+.message__group input:invalid {
+  border-bottom-color: orangered;
+}
+.message__group-label {
+  font-size: 1.8rem;
+}
+.message__group button {
+  padding: 1rem 5rem;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+  color: #016a98;
+  width: 15rem;
+  position: relative;
+  height: 5rem;
+}
+.message__group button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: inherit;
+  transform: scale(1.4);
+  filter: blur(3px);
+  border-radius: inherit;
+  transition: all 0.1s;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.1);
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+}
+.message__group button:hover {
+  transform: translateY(-2px);
+}
+.message__group button:active {
+  transform: translateY(-1px);
+}
+.message__group button:active::after {
+  box-shadow: 0.5rem 0.5rem 1rem #fff;
+  transform: translateY(-3px);
+  opacity: 1;
+}
+.message__tips {
+  padding: 1rem 1rem;
+}
+.message__law {
+  padding: 1rem 1rem;
+}
+
+/*# sourceMappingURL=message.css.map */
